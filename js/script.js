@@ -17,10 +17,9 @@ const DomElement = function(selector, height = 100, width = 100, bg = 'red', fon
   };
 };
 
-const element = new DomElement();
-
-
-element.selector = '.block';
+const element = new DomElement('.block');
+const element1 = new DomElement('#block');
 
 element.getBlock();
+element1.getBlock();
 
